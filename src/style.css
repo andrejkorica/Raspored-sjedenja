@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root { font-family: 'DM Sans', Arial, sans-serif; color: #24332c; background: #f4f6f1; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+.app-shell { min-height: 100vh; }
+.topbar { height: 78px; background: #fff; border-bottom: 1px solid #e5ebe2; display: flex; align-items: center; padding: 0 5%; gap: 13px; }
+.brand-mark { width: 42px; height: 42px; background: #254b38; color: #fff; border-radius: 11px; display: grid; place-items: center; font-size: 25px; }
+.topbar strong, .topbar span { display: block; }
+.topbar strong { font-family: Manrope, sans-serif; font-size: 16px; letter-spacing: -.5px; }
+.topbar span { font-size: 11px; color: #93a097; margin-top: 2px; }
+.topbar-note { margin-left: auto; color: #84938a; font-size: 10px; font-weight: 700; letter-spacing: 1.3px; }
+.topbar-note span { display: inline; color: #68a77d; margin: 0 9px; }
+.workspace { max-width: 1600px; margin: auto; display: flex; min-height: calc(100vh - 78px); }
+.sidebar { width: 306px; flex: none; background: #f9fbf7; border-right: 1px solid #e2e9df; padding: 39px 25px; }
+.eyebrow { color: #688875; font-size: 10px; font-weight: 800; letter-spacing: 1.55px; }
+h1, h2, h3, p { margin-top: 0; }
+h1, h2, h3 { font-family: Manrope, sans-serif; letter-spacing: -1px; }
+.sidebar-heading h1 { font-size: 25px; margin: 11px 0 9px; }
+.sidebar-heading p { font-size: 12px; line-height: 1.65; color: #87968a; margin-bottom: 33px; }
+.create-card, .rooms-card { background: #fff; border: 1px solid #e3eae1; border-radius: 13px; padding: 19px; box-shadow: 0 7px 24px #2c493506; margin-bottom: 18px; }
+.section-title { display: flex; align-items: center; gap: 9px; margin-bottom: 20px; }
+.number { color: #4f8462; background: #ecf5ec; border-radius: 5px; padding: 5px 6px; font-size: 10px; font-weight: 800; }
+.section-title h2 { font-size: 14px; margin: 0; letter-spacing: -.3px; }
+label { display: block; color: #64766a; font-size: 11px; font-weight: 700; margin-bottom: 15px; }
+input { width: 100%; height: 39px; border: 1px solid #dde7dc; border-radius: 7px; padding: 0 11px; color: #2a4433; background: #fbfdfb; outline: none; margin-top: 7px; }
+input:focus { border-color: #6da680; box-shadow: 0 0 0 3px #75ab821c; }
+input::placeholder { color: #a9b7ab; }
+.field-pair { display: flex; gap: 10px; }.field-pair label { width: 50%; }
+.primary-button, .save-button { border: 0; background: #2b6748; color: #fff; font-weight: 700; border-radius: 7px; }
+.primary-button { width: 100%; height: 40px; font-size: 12px; }.primary-button span { font-size: 17px; vertical-align: -1px; margin-right: 5px; }
+.primary-button:hover, .save-button:hover { background: #1d5336; }
+.rooms-card { padding-bottom: 12px; }.rooms-card .section-title { margin-bottom: 12px; }
+.room-list { display: flex; flex-direction: column; gap: 5px; }
+.room-option { background: transparent; border: 1px solid transparent; width: 100%; padding: 9px 7px; text-align: left; display: flex; align-items: center; gap: 10px; border-radius: 8px; color: #314638; }
+.room-option.active { background: #eff7ef; border-color: #dcebdd; }.room-option:hover { background: #f5f8f4; }
+.room-icon { color: #57926c; font-size: 19px; }.room-option strong, .room-option small { display: block; }.room-option strong { font-size: 11px; }.room-option small { font-size: 10px; color: #9aab9c; margin-top: 3px; }.room-arrow { margin-left: auto; color: #82a68c; font-size: 20px; }
+.empty-rooms { color: #9bac9e; font-size: 11px; line-height: 1.5; }
+.tip { display: flex; gap: 11px; background: #edf4e9; padding: 17px; border-radius: 10px; color: #68866d; }.tip > span { font-size: 16px; color: #5a9b6b; }.tip p { font-size: 11px; line-height: 1.6; margin: 0; }.tip strong { color: #3a6547; }
+.main-panel { min-width: 0; flex: 1; padding: 43px 4.1% 40px; }
+.panel-header { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 29px; }.panel-header h2 { font-size: 30px; margin: 8px 0 6px; }.panel-header p { color: #93a095; font-size: 12px; margin: 0; }.eyebrow-line { display: inline-block; width: 22px; height: 1px; background: #83a88a; margin: 0 0 3px 7px; }
+.header-actions { display: flex; gap: 10px; align-items: center; }.dimension-badge { border: 1px solid #dae8db; background: #f1f7ef; border-radius: 7px; color: #5b8667; font-size: 10px; font-weight: 800; letter-spacing: .6px; padding: 12px; white-space: nowrap; }.save-button { height: 39px; padding: 0 15px; font-size: 11px; white-space: nowrap; }.save-button span { margin-left: 10px; font-size: 15px; }
+.canvas-card { background: #fff; border: 1px solid #e3eae1; border-radius: 13px; box-shadow: 0 12px 38px #344d3708; overflow: hidden; }.canvas-toolbar, .canvas-footer { display: flex; justify-content: space-between; align-items: center; padding: 17px 23px; font-size: 10px; color: #96a69a; }.canvas-toolbar { border-bottom: 1px solid #edf1eb; }.canvas-toolbar span:first-child { color: #698c75; letter-spacing: 1.2px; font-weight: 800; }.live-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #7eb58b; margin-right: 8px; }
+.seat { border: 0; background: transparent; padding: 0; color: #a3b5a7; text-align: center; }.seat .chair-back { background: #dce7dc; border: 2px solid #c8d9ca; border-radius: 8px 8px 3px 3px; margin-bottom: 3px; }.seat .chair-body { background: #f0f5ee; border: 2px solid #dce8dc; border-radius: 10px; box-shadow: 0 5px 0 #d9e7da; font-size: 19px; font-weight: 500; }.seat .seat-label { font-size: 10px; font-weight: 700; }.seat:not(.teacher-seat):hover .chair-body, .seat.selected .chair-body { border-color: #55a36c; box-shadow: 0 5px 0 #9fc7a6, 0 0 0 4px #90c39b33; }.seat.occupied .chair-back { background: #8eb99a; border-color: #78a888; }.seat.occupied .chair-body { color: #fff; background: #57956c; border-color: #4c8860; box-shadow: 0 5px 0 #3c7953; font-size: 11px; font-weight: 800; line-height: 1.15; padding: 4px; overflow: hidden; overflow-wrap: anywhere; }.seat.occupied .seat-label { color: #4f7e5c; }.teacher-seat .chair-back { background: #d9bd84; border-color: #c8a96f; }.teacher-seat .chair-body { background: #f6e7c9; border-color: #ddc18c; box-shadow: 0 5px 0 #ddc18c; color: #a77d34; }.teacher-seat .seat-label { color: #a38852; font-size: 9px; letter-spacing: .7px; }
+.seat-editor { background: #fff; border: 1px solid #cfe0d0; border-radius: 10px; padding: 12px; box-shadow: 0 12px 30px #263f2c30; text-align: left; }.seat-editor label { margin: 0; color: #587564; }.seat-editor input { margin: 7px 0 9px; }.seat-editor-actions { display: flex; justify-content: flex-end; gap: 5px; }.seat-editor-actions button { border: 1px solid #dce7dc; border-radius: 6px; background: #f8fbf7; color: #66806c; font-size: 10px; padding: 6px 7px; }.seat-editor-actions .delete-seat { color: #a84f4f; border-color: #efd6d6; }.seat-editor-actions button[type="submit"] { border-color: #2b6748; background: #2b6748; color: #fff; }
+.canvas-footer { justify-content: center; gap: 22px; border-top: 1px solid #edf1eb; padding: 16px; }.canvas-footer span { display: flex; align-items: center; gap: 6px; }.legend-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }.occupied-legend { background: #57956c; }.empty-legend { background: #dce7dc; }.teacher-legend { background: #dabb7d; }
+.bottom-row { margin-top: 22px; }.edit-card { background: #fff; border: 1px solid #e4ebe2; border-radius: 11px; padding: 21px 24px; display: flex; justify-content: space-between; align-items: center; gap: 20px; }.edit-card h3 { font-size: 16px; margin: 5px 0 4px; }.edit-card p { font-size: 11px; color: #9aaa9d; margin: 0; }.edit-controls { display: flex; gap: 8px; min-width: 330px; }.edit-controls input { margin: 0; }.edit-controls button { border: 1px solid #dce7dc; background: #f9fbf8; color: #698773; border-radius: 7px; font-size: 11px; padding: 0 12px; }.edit-controls button:disabled { opacity: .4; cursor: default; }.room-actions { display: flex; justify-content: space-between; align-items: center; margin-top: 15px; color: #a4afa5; font-size: 10px; }.room-actions button { border: 0; background: transparent; color: #aa7474; font-size: 11px; }.room-actions button:disabled { opacity: .4; cursor: default; }.message { position: fixed; bottom: 24px; right: 24px; background: #264c36; color: #fff; padding: 12px 17px; border-radius: 8px; font-size: 12px; box-shadow: 0 8px 30px #0002; cursor: pointer; }
+@media (max-width: 1050px) { .sidebar { width: 270px; padding: 30px 18px; }.main-panel { padding: 32px 24px; }.panel-header { align-items: flex-start; flex-direction: column; } }
+@media (max-width: 760px) { .topbar { padding: 0 18px; }.topbar-note { display: none; }.workspace { display: block; }.sidebar { width: auto; border-right: 0; border-bottom: 1px solid #e2e9df; }.sidebar-heading p { margin-bottom: 20px; }.main-panel { padding: 28px 16px; }.panel-header h2 { font-size: 25px; }.edit-card { display: block; }.edit-controls { min-width: 0; margin-top: 17px; }.room-actions { gap: 15px; } }
